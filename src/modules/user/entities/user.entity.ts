@@ -50,6 +50,6 @@ export class User {
     @OneToMany(() => Cart, (cart) => cart.user)
     cart: Cart;
 
-    @OneToOne(() => FavoriteProduct, (favoriteProduct) => favoriteProduct.user)
+    @OneToMany(() => FavoriteProduct, (favoriteProduct) => favoriteProduct.user)
     favoriteProduct: FavoriteProduct[];
 }

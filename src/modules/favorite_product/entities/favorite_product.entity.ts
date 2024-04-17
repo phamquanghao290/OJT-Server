@@ -7,7 +7,7 @@ export class FavoriteProduct {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @OneToOne(() => User, (user) => user.favoriteProduct)
+    @ManyToOne(() => User, (user) => user.favoriteProduct)
     @JoinColumn({ name: 'user_id' })
     user: User;
 
