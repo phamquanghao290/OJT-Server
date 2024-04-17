@@ -28,8 +28,8 @@ import { Cart } from './modules/cart/entities/cart.entity';
 import { CartModule } from './modules/cart/cart.module';
 import { ProductDetail } from './modules/product_detail/entities/product_detail.entity';
 import { ProductDetailModule } from './modules/product_detail/product_detail.module';
-import { SizeColor } from './modules/size_color/entities/size_color.entity';
-import { SizeColorModule } from './modules/size_color/size_color.module';
+// import { SizeColor } from './modules/size_color/entities/size_color.entity';
+// import { SizeColorModule } from './modules/size_color/size_color.module';
 import { AuthModule } from './modules/auth/auth.module';
 
 
@@ -43,7 +43,7 @@ import { AuthModule } from './modules/auth/auth.module';
       username: 'root',
       password: '',
       database: 'ojt-ec',
-      entities: [User, Size, Product, Brand, Category, Image, Order, Color, Address, FavoriteProduct, OrderDetail, Cart, ProductDetail, SizeColor],
+      entities: [User, Size, Product, Brand, Category, Image, Order, Color, Address, FavoriteProduct, OrderDetail, Cart, ProductDetail],
       synchronize: true,
     }), 
     UserModule,
@@ -59,7 +59,6 @@ import { AuthModule } from './modules/auth/auth.module';
     OrderDetailModule,
     CartModule,
     ProductDetailModule,
-    SizeColorModule,
     AuthModule
   ],
   controllers: [],

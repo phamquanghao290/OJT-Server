@@ -58,7 +58,7 @@ async function bootstrap() {
   // });
 
   await app.listen(PORT, () => {
-    console.log(`App listen on port: http://localhost:${PORT.Backend}`);
+    console.log(`App listen on port: http://localhost:${PORT}`);
   });
 }
 bootstrap();
